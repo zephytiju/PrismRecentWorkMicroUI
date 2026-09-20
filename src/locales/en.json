@@ -1,0 +1,25 @@
+{
+  "recent-work": {
+    "sectionTitle": "RECENT WORK",
+    "sectionMeta": "CONTINUE WHERE YOU LEFT OFF",
+    "emptyTitle": "No recent work yet",
+    "emptyHint": "Files you open and edit will appear here so you can pick up where you left off.",
+    "openFile": "Open file",
+    "editedAgo": "EDITED {ago} AGO",
+    "minutesAgo": "{count}M",
+    "hoursAgo": "{count}H",
+    "daysAgo": "{count}D",
+    "syncLive": "Live",
+    "syncSyncing": "Syncing",
+    "syncSynced": "Synced",
+    "insert": "+",
+    "kindFolder": "FOLDER",
+    "kindDossier": "DOSSIER FILE",
+    "kindEvidence": "EVIDENCE FILE",
+    "kindReference": "REFERENCE",
+    "kindBoard": "BOARD",
+    "kindWorkflowBoard": "WORKFLOW BOARD",
+    "kindAuditBoard": "AUDIT BOARD",
+    "kindWorld": "GEOVISION FILE"
+  }
+}

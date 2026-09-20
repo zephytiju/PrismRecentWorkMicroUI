@@ -1,0 +1,25 @@
+{
+  "recent-work": {
+    "sectionTitle": "最近工作",
+    "sectionMeta": "从上次中断处继续",
+    "emptyTitle": "暂无最近工作",
+    "emptyHint": "打开和编辑过的文件会出现在这里，便于快速继续上次的工作。",
+    "openFile": "打开文件",
+    "editedAgo": "编辑于 {ago}前",
+    "minutesAgo": "{count}分钟",
+    "hoursAgo": "{count}小时",
+    "daysAgo": "{count}天",
+    "syncLive": "实时",
+    "syncSyncing": "同步中",
+    "syncSynced": "已同步",
+    "insert": "+",
+    "kindFolder": "文件夹",
+    "kindDossier": "案卷文件",
+    "kindEvidence": "证据文件",
+    "kindReference": "参考资料",
+    "kindBoard": "看板",
+    "kindWorkflowBoard": "工作流板",
+    "kindAuditBoard": "审计板",
+    "kindWorld": "GEOVISION 文件"
+  }
+}

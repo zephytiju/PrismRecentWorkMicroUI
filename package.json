@@ -1,0 +1,52 @@
+{
+  "name": "@zephytiju/prism-recent-work",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Platform Prism recent-work micro-UI (component id \"recent-work\"): the VAULT root-level continuation strip — RECENT WORK / CONTINUE WHERE YOU LEFT OFF header plus per-prototype file-row members (kind icon, name, descriptor, live sync dot) rendering recent IFileEntry records 0..N at app runtime, ordered by updatedAt with an optional recency window and a configurable column grid. Consumes the recent-work.file-entries channel; opening a row publishes the navigation/open intent bounded payload for the shell and the File Viewer's path slot. No Lattice calls. Ships en + zh-CN locale bundles.",
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./locales/*": "./locales/*"
+  },
+  "publishConfig": { "access": "public" },
+  "files": ["dist", "locales"],
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -p tsconfig.build.json && node scripts/copy-locales.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "shot-demo": "node scripts/shot-demo.mjs"
+  },
+  "peerDependencies": {
+    "@mantine/core": "^8.1.1",
+    "@zephytiju/lattice-common-interfaces": ">=0.1.0",
+    "@zephytiju/prism-react": ">=0.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@mantine/core": "8.1.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.1.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@zephytiju/lattice-common-interfaces": "0.1.0",
+    "@zephytiju/prism-react": "0.1.0",
+    "jsdom": "^25.0.1",
+    "puppeteer-core": "^24.10.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "typescript": "^5.7.2",
+    "vite": "6.0.5",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
