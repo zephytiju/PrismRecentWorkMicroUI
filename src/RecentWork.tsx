@@ -1,8 +1,10 @@
 import { useMemo } from "react";
-import { Box, Card, Group, Stack, Text } from "@mantine/core";
+import { Box, Stack } from "@mantine/core";
 import { usePrismStateValue } from "@zephytiju/prism-react";
 import { FileRow } from "./FileRow.js";
 import type { RecentFileEntry, RecentFilesProjection } from "./FileRow.js";
+import { EmptyState } from "./EmptyState.js";
+import { SectionHeader } from "./SectionHeader.js";
 import { stringsForLocale } from "./locales/index.js";
 import type { RecentWorkLocale } from "./locales/index.js";
 
@@ -92,36 +94,10 @@ export function RecentWork({
 
   return (
     <Stack gap={10} miw={0} data-testid="recent-work-section">
-      <Group justify="space-between" align="baseline" wrap="nowrap" gap={8}>
-        <Text
-          fz={12}
-          fw={600}
-          style={{ color: "var(--mantine-color-text-filled)", letterSpacing: "0.02em" }}
-          data-testid="recent-work-section-title"
-        >
-          {resolvedSectionTitle}
-        </Text>
-        <Text
-          ff="var(--mantine-font-family-monospace)"
-          fz={9}
-          style={{ color: "var(--mantine-color-muted-filled)" }}
-          data-testid="recent-work-section-meta"
-        >
-          {resolvedSectionMeta}
-        </Text>
-      </Group>
+      <SectionHeader title={resolvedSectionTitle} meta={resolvedSectionMeta} />
 
       {entries.length === 0 ? (
-        <Card withBorder data-testid="recent-work-empty">
-          <Stack gap="xs">
-            <Text fw={500} data-testid="recent-work-empty-title">
-              {strings.emptyTitle}
-            </Text>
-            <Text size="sm" data-testid="recent-work-empty-hint">
-              {strings.emptyHint}
-            </Text>
-          </Stack>
-        </Card>
+        <EmptyState title={strings.emptyTitle} hint={strings.emptyHint} />
       ) : (
         <Box
           style={{
